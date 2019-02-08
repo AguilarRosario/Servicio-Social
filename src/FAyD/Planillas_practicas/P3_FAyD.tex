@@ -1,0 +1,48 @@
+ 	 \documentclass[10pt,letterpaper,spanish,twoside]{report}
+
+\usepackage{practica}
+\input{../common/plantillas}
+
+\begin{document}
+\docdate
+
+\begin{center}
+ \textsc{\asignatura}\vspace{.2em}
+\end{center}
+
+\textsc{Práctica III. Aplicación de filtros digitales tipo Butterworth rechaza banda a señales biomédicas reales}
+
+\textsc{Objetivo:}Aplicar los conocimientos sobre el diseño de filtros Butterworth rechaza banda para procesamiento de señales biomédicas reales simulando su adquisición en tiempo real
+
+\textsc{Actividades:}
+\begin{enumerate}
+  \item Descargar el archivo de audio 'PCG$\_$noise.wav' https://goo.gl/xCkryR
+  \item Obtener la FFT de la señal de forma digital
+  \item Identificar la interferencia en la FFT
+  \item Diseñar un filtro digital tipo Butterworth rechaza banda orden 2 para eliminar la interferencia
+  \item Implementar el filtro con fase cero en código
+  \item Caracterizar la respuesta en frecuencia del filtro
+  \item Diseñar un filtro digital tipo Butterworth rechaza banda orden 4 para eliminar la interferencia
+  \item Implementar el filtro con fase cero en código
+  \item Caracterizar la respuesta en frecuencia del filtro
+\end{enumerate}
+
+\textsc{Entregables}
+\begin{itemize}
+  \item Bitácora por equipo.
+  \item Caracterización de los filtros.
+  \item Código.
+  \item Comparación entre audio contaminado y filtrado.
+\end{itemize}
+
+
+%\textsc{Nota}
+%\vspace{2em}
+\vfill
+\begin{flushright}
+\textsc{Elaboró:\\
+Ma. del Rosario Aguilar Cruz\\
+Enrique Mena Camilo}
+\end{flushright}
+
+\end{document}

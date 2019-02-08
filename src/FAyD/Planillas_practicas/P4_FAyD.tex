@@ -1,0 +1,44 @@
+\documentclass[10pt,letterpaper,spanish,twoside]{report}
+
+\usepackage{practica}
+\input{../common/plantillas}
+
+\begin{document}
+\docdate
+
+\begin{center}
+ \textsc{\asignatura}\vspace{.2em}
+\end{center}
+
+\textsc{Práctica 1. Aplicación de filtros analógicos tipo Butterworth pasa bajas a señales biomédicas reales}
+
+\textsc{Objetivo:} 
+Aplicar los conocimientos adquiridos sobre el diseño de filtros analógicos Chebyshev tipo 1 para el procesamiento de señales biomédicas reales adquiridas simulando su adquisición en tiempo real.
+
+\textsc{Actividades}
+\begin{enumerate}
+  \item Descargar señal de presión arterial del banco de señales de physioNet.org con una duración de un minuto
+  \item La señal tiene una frecuencia de muestreo de 100 Hz, por lo tanto, fue necesario remuestrear la señal a 1000 Hz y este proceso se puede consultar en el archivo de Señales$\_$Utilizadas.ipynb encontrado en la siguiente liga *
+  \item Contaminar señal con ruido de alta frecuencia 
+  \item Grabar señal en archivos .wav
+\end{enumerate}
+
+\textsc{Entregables}
+\begin{itemize}
+  \item Bitácora por equipo
+  \item Caracterización del filtro
+  \item Circuito funcionando
+  \item Contenido espectral de la señal original y la señal filtrada
+\end{itemize}
+
+
+%\textsc{Nota}
+%\vspace{2em}
+\vfill
+\begin{flushright}
+\textsc{Elaboró:\\
+Ma. del Rosario Aguilar Cruz\\
+Enrique Mena Camilo}
+\end{flushright}
+
+\end{document}

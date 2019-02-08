@@ -1,0 +1,47 @@
+\documentclass[10pt,letterpaper,spanish,twoside]{report}
+
+\usepackage{practica}
+\input{../common/plantillas}
+
+\begin{document}
+\docdate
+
+\begin{center}
+ \textsc{\asignatura}\vspace{.2em}
+\end{center}
+
+\textsc{Práctica VI. Aplicación de filtros chebyshev digitales tipo 1 y 2 rechaza banda}
+
+\textsc{Objetivo:} 
+Aplicar los conocimientos adquiridos sobre el diseño de filtros Chebyshev digitales para el procesamiento de señales biomédicas
+
+\textsc{Actividades}
+\begin{enumerate}
+  \item Descargar el archivo de audio 'PCG$\_$60.npz' https://goo.gl/xCkryR
+  \item Obtener la FFT de la señal de forma digital
+  \item Identificar la interferencia en la FFT
+  \item Diseñar un filtro digital tipo FIR rechaza banda orden 4 tipo 1 para eliminar la interferencia
+  \item Implementar el filtro con fase cero en código
+  \item Caracterizar la respuesta en frecuencia del filtro
+  \item Diseñar un filtro digital tipo FIR rechaza banda orden 4 tipo 2 para eliminar la interferencia
+  \item Implementar el filtro con fase cero en código
+  \item Caracterizar la respuesta en frecuencia del filtro
+\end{enumerate}
+
+\textsc{Entregables}
+\begin{itemize}
+  \item Bitácora por equipo.
+  \item Caracterización de los filtros.
+  \item Contenido espectral de señales originales y filtradas.
+\end{itemize}
+
+%\textsc{Nota: }
+%\vspace{2em}
+\vfill
+\begin{flushright}
+\textsc{Elaboró:\\
+Ma. del Rosario Aguilar Cruz\\
+Enrique Mena Camilo}
+\end{flushright}
+
+\end{document}

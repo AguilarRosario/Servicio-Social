@@ -1,0 +1,48 @@
+\documentclass[10pt,letterpaper,spanish,twoside]{report}
+
+\usepackage{practica}
+\input{../common/plantillas}
+
+\begin{document}
+\docdate
+
+\begin{center}
+ \textsc{\asignatura}\vspace{.2em}
+\end{center}
+
+\textsc{Práctica II. Aplicación de filtros analógicos tipo Butterworth pasa altas a señales biomédicas reales}
+
+\textsc{Objetivo:}Aplicar los conocimientos sobre el diseño de filtros Butterworth pasa bajas para procesamiento de señales biomédicas reales simulando su adquisición en tiempo real
+
+\textsc{Actividades:}
+\begin{enumerate}
+  \item Descargar el archivo de audio 'ECG$\_$resp.wav' https://goo.gl/gKKAfd
+  \item Obtener la FFT de la señal en el osciloscopio
+  \item Identificar la interferencia en la FFT
+  \item Diseñar un filtro analógico tipo Butterworth pasa altas orden 2 para eliminar la interferencia
+  \item Implementar el filtro con topología Sallen-Key
+  \item Caracterizar la respuesta en frecuencia del filtro
+  \item Diseñar un filtro analógico tipo Butterworth pasa altas orden 4 para eliminar la interferencia
+  \item Implementar el filtro con topología Sallen-Key
+  \item Caracterizar la respuesta en frecuencia del filtro
+\end{enumerate}
+
+\textsc{Entregables}
+\begin{itemize}
+  \item Bitácora por equipo.
+  \item Caracterización de los filtros.
+  \item Circuitos funcionando.
+  \item Contenido espectral de señales originales y filtradas.
+\end{itemize}
+
+
+%\textsc{Nota}
+%\vspace{2em}
+\vfill
+\begin{flushright}
+\textsc{Elaboró:\\
+Ma. del Rosario Aguilar Cruz\\
+Enrique Mena Camilo}
+\end{flushright}
+
+\end{document}

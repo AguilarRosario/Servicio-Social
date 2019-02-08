@@ -1,0 +1,47 @@
+\documentclass[10pt,letterpaper,spanish,twoside]{report}
+
+\usepackage{practica}
+\input{../common/plantillas}
+
+\begin{document}
+\docdate
+
+\begin{center}
+\textsc{\asignatura}\vspace{.2em}
+\end{center}
+
+\textsc{Práctica IX. Aplicación de filtros FIR multibanda por medio del algoritmo de Rémez para identificar acordes musicales}
+
+\textsc{Objetivo:} Aplicar los conocimientos adquiridos acerca del diseño de fitros multibanda para desarrollar un sistema cuyo objetivo sea la identificación de acordes musicales
+
+\textsc{Notas musicales.} La unidad fundamental para poder realizar música son las notas musicales, estas notas son Do-Do$\sharp$-Re-Re$\sharp$-Mi-Fa-Fa$\sharp$-Sol-Sol$\sharp$-La-La$\sharp$-Si, y cada nota puede estar presente dentro de una octava, de las cuales existen 8. Cada nota musical equivale a una señal senoidal con una determinada frecuencia, por ejemplo, la nota La4 equivale a 440 Hz, mientras que la nota Sol3 equivale a 193 Hz. Es decir, podemos crear notas musicales al crear senoidales con las frecuencias correspondientes.
+
+\textsc{Acordes.} Existen varios tipos de acordes, pero para esta práctica nos enfocaremos en los acordes naturales mayores. Para formar estos acordes se necesitan tocar tres notas de manera simultanea. Como ejemplo tenemos el arcorde Do Mayor: tomamos la nota Do y contamos 4 notas adelante y 7 notas adelante, tomamos las notas que estén en esos lugares y tenemos Mi y Sol, por lo cual, para formar el acorde de Do Mayor hay que tocar de manera simultanea las notas Do-Mi-Sol.
+
+\textsc{La práctica.} Sabemos que cada nota es una senoidal de una frecuencia, por lo tanto, su FFT mostrará solamente una espiga. Ahora, si tomamos un acorde que está formado por tres notas, en su FFT se observarán 3 espigas. La práctica consiste en diseñar un sistema que cuente con un banco de filtros multibanda y por medio del teoréma de Parseval determine cuál es el acorde que se está ingresando.*Los acordes que deberá identificar el sistema se muestran en 1*
+
+\textsc{Actividades:}
+\begin{enumerate}
+  \item Investigue las frecuencias correspondientes a las notas necesarias para formar los acordes
+  \item Diseñe un banco de filtros para la detección de los acordes
+  \item Caracterice el banco de filtros
+  \item Pruebe su sistema con senoidales generadas con pyhton
+\end{enumerate}
+
+\textsc{Entregables}
+\begin{itemize}
+  \item Bitácora por equipo.
+  \item Caracterización de los filtros.
+  \item Detección de 10 acordes.
+\end{itemize}
+
+%\textsc{Nota}
+%\vspace{2em}
+\vfill
+\begin{flushright}
+\textsc{Elaboró:\\
+Ma. del Rosario Aguilar Cruz\\
+Enrique Mena Camilo}
+\end{flushright}
+
+\end{document}
