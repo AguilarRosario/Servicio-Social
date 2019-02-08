@@ -1,0 +1,103 @@
+
+%setting basico
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[landscape,top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%info
+\input{../common/info}
+
+%referencias y vinculos
+\usepackage{url}
+
+%listas
+\usepackage{balance}
+\usepackage{enumitem}
+
+%figuras y floats
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage[table,xcdraw]{xcolor}
+\graphicspath{{../../images/}{../../images/common/}{../../images/lab/}}
+
+%dibujos y formas
+\usepackage{tcolorbox}
+\definecolor{MainColor}{HTML}{73BF38}
+
+
+%entornos matematicos y simbolos
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\decimalpoint
+
+%parrafo
+\setlength{\columnseprule}{1pt}		% default=0pt (no line)
+\setlength{\parskip}{2ex}
+\usepackage{xspace}
+
+%fuentes
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[sc]{mathpazo}
+
+%Definiciones
+%TODO
+%Simbolos
+%%%revisar si son necesarios
+\newcommand{\laplace}{$\mathcal{L}$\xspace}
+\newcommand{\fourier}{$\mathcal{F}$\xspace}
+
+%%entornos
+%
+\setlength\parindent{0pt}
+\usepackage{lastpage} % number of last page 
+\fancyhead[L]{\escuela}
+\fancyhead[R]{\departamento}
+\fancyfoot[L]{\asignatura -- \periodo}
+\fancyfoot[C]{ }
+\fancyfoot[R]{Página \thepage ~de \pageref{LastPage}}
+
+%
+\renewcommand\footrule{\begin{minipage}{1\textwidth}
+		\hrule width \hsize height 2pt \kern 1mm \hrule width \hsize   
+	\end{minipage}\par}
+
+%
+\renewcommand\headrule{
+	\begin{minipage}{1\textwidth}
+		\hrule width \hsize \kern 1mm \hrule width \hsize height 2pt 
+\end{minipage}}%
+
+%%Secciones, subsecciones
+\renewcommand\thesection{\arabic{section}}
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\bfseries}
+\titleformat*{\subsubsection}{\itshape}
+\titleformat*{\paragraph}{\itshape}
+\titleformat*{\subparagraph}{\itshape}
+
+%%Planeacion en semanas
+\newcounter{weekno}
+%\addtocounter{weekno}{1}
+\newcommand*\week{\stepcounter{weekno} \dotfill semana \theweekno}
+\newcommand*\weekrep{\dotfill semana \theweekno}
+%TODO implementar un loop para n semanas
+\newcommand*\weeks{\dotfill semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno}
+\newcommand*\weekss{\dotfill semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno}
+\newcommand*\weeksss{\dotfill semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno}
+\newcommand*\weekssss{\dotfill semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno, semana \stepcounter{weekno}\theweekno}
+
+%configuracion biblatex
+\usepackage[backend = biber, 
+			style   = numeric-comp, 
+			natbib  = true,
+			defernumbers=true,
+			sorting = none] {biblatex}
+\bibliography{TSL}

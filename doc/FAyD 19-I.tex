@@ -1,0 +1,251 @@
+% \TeX spellcheck = es_MX
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{planeacion}
+
+\begin{document}
+
+%TODO pagina de inicio en un archivo tex a parte
+\thispagestyle{plain}
+
+\begin{minipage}{0.3\linewidth}
+	\vspace*{-60pt}
+	\includegraphics[width=\linewidth]{logo}  
+\end{minipage}~~
+\begin{minipage}{0.8\linewidth}
+	\vspace*{-20pt}
+	{\Large \licenciaturas\\}
+	{\large \periodo\\ 
+		\asignatura}, {\clave}\\
+
+	\contacto
+\end{minipage}
+\hrule\hrule
+
+\vspace{10pt}
+	Horario: 
+\begin{center}
+{\setlength{\extrarowheight}{14pt}%
+\begin{tabular}{lp{.17\linewidth}p{.17\linewidth}p{.17\linewidth}p{.17\linewidth}p{.17\linewidth}}
+ &   \multicolumn{1}{c}{Lunes}
+   & \multicolumn{1}{c}{Martes}
+   & \multicolumn{1}{c}{Miércoles}
+   & \multicolumn{1}{c}{Jueves}
+   & \multicolumn{1}{c}{Viernes} \\
+\renewcommand{\arraystretch}{2}%
+ &   \cellcolor{MainColor!70} \parbox{.17\textwidth}{\centering \Lunes}
+   & \cellcolor{MainColor}    \parbox{.17\textwidth}{\centering \Martes}
+   & \cellcolor{MainColor!20} \parbox{.17\textwidth}{\centering \Miercoles}
+   & \cellcolor{MainColor}    \parbox{.17\textwidth}{\centering \Jueves}
+   & \cellcolor{MainColor!20} \parbox{.17\textwidth}{\centering \Viernes} \\[4ex]
+\end{tabular} }\\[2em]
+\end{center}
+
+Asesorías:\\
+Solicitar horario por correo electrónico. 
+
+\vspace* {5pt}
+\hrule
+\section{Importancia del curso}
+ \importancia
+
+\vspace* {5pt}
+\hrule
+%\vspace* {2pt}
+\section{Objetivos}
+\objetivo
+%\subsection{Objetivos generales}
+
+
+\subsection{Objetivos específicos}
+El alumno será capaz de:
+\objetivos
+
+\vspace* {5pt}
+\hrule
+
+\section{Conocimientos Previos}
+
+\subsection{Esenciales}
+\crequeridos
+
+\subsection{Recomendables}
+\copcionales
+
+
+
+\vspace* {5pt}
+\hrule
+
+
+
+
+\section{Temario General}
+
+
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\renewcommand{\labelenumii}{\labelenumi\arabic{enumii}.}
+\renewcommand{\labelenumiii}{\labelenumii\arabic{enumiii}. }
+\input{temario}
+
+\nocite{Kamal2009,Parhami2007}
+\printbibliography[title={Bibliografía Básica}, keyword=basica, sorting=tny, heading=bibnumbered]
+
+\nocite{TivaUG2013,Tiva2014}
+\printbibliography[title={Bibliografía Básica}, keyword=complementaria, sorting=tny, heading=bibnumbered]
+
+\hrule
+
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\vspace* {3pt}
+\hrule
+\vspace* {2pt}
+\section{Evaluación}
+
+Los elementos de evaluación del curso se catalogan en teoría y laboratorio. Para acreditar la materia cada uno de los elementos de dichas categorías debe tener una calificación mínima de 6.0. A continuación se especifican cada uno de los elementos de evaluación del curso.
+
+\subsection{Teoría}  
+		\begin{description} 
+			\item [Exámenes (50\%):] Se aplicarán cuatro exámenes obligatorios, tres intermedios para evaluaciones parciales y uno al final del curso con carácter de global. Las fechas de aplicación serán las siguientes:
+			  \begin{itemize}
+			    \item Examen Parcial I. \hspace{5pt}2019.02.21
+			    \item Examen Parcial II.\hspace{4pt}2019.03.14
+			    \item Examen Parcial III. 2019.04.02
+			    \item Examen Global. \hspace{15pt}2019.05.09
+			  \end{itemize}
+			\item [Tareas, exámenes rápidos y participación (10\%):] Se asignarán tareas y exámenes rápidos acorde con el avance del curso. Estos pueden tener las siguientes calificaciones: \textbf{No entregada} (0 ptos.), \textbf{Incompleta} (1 pto.) y \textbf{Completa} (2 ptos.). 
+			
+Una tarea se considera incompleta si se realizó menos del 70\% correctamente. De forma similar se realizará con los exámenes rápidos. En el caso de una tarea no entregada se considera cuando una tarea tiene menos del 50\% de las actividades realizadas correctamente.
+
+En cuanto a las participaciones, se considerará únicamente aquellas que contribuyan a consolidar el conocimiento en la clase. En este rubro se considerarán aquellas tareas opcionales que eventualmente se asignen, la calificación se obtendrá de la misma forma que en tareas y exámenes rápidos. 
+
+La calificación $C_{tr}$ de este rubro se obtendrá:
+$$C_{tr}=\dfrac{1}{2N}\sum_{i=1}^N x_i,$$
+donde $x_i\in\{0,1,2\}$ corresponde a la calificación del $i$-ésimo elemento del rubro, siendo $N$ el número total de elementos de evaluación del rubro.
+		\end{description}
+	
+	\subsection{Laboratorio}
+  	\begin{description}
+  	  \item [Prácticas (20\%):] Habrá cinco prácticas que los alumnos deberán resolver cabalmente. En los enunciados de cada una se especificarán los elementos de evaluación, los entregables y sus correspondientes ponderaciones. La calificación de cada práctica se realizará sobre diez puntos. Los equipos de laboratorio se conformarán por tres integrantes inscritos a la UEA.
+  	  
+  	  La calificación $C_{pr}$ de las prácticas se calculará como el promedio simple de las calificaciones individuales de las prácticas.
+  	  
+  	  \item [Proyecto (10\%):] El proyecto se asignará en la semana 10 y contemplara el desarrollo completo de una aplicación de filtros en el ámbito de la ingeniería biomédica. Los requerimientos mínimos, entregables y sus respectivas ponderaciones se darán a conocer oportunamente. La calificación del proyecto será sobre diez puntos. %El proyecto final de la materia será elegido por los cada equipo de laboratorio y deberá ser autorizado por el profesor. Una vez que aprobado el proyecto, este no podrá cambiarse por otro. Los requerimientos mínimos, entregables y sus respectivas ponderaciones se darán a conocer oportunamente. La calificación del proyecto será sobre diez puntos.
+  	  
+  	  \item [Bitácora (5\%).] Es de observancia obligatoria el uso de una bitácora para las prácticas de laboratorio y proyecto final. El formato es libre siempre y cuando se cumplan los siguientes requisitos mínimos:
+      \begin{itemize}
+        \item Completamente enumerada por hoja
+        \item Utilizar por lo menos cinco elementos de simbología, por ejemplo: tareas por hacer, tareas realizadas, para buscar después, etc.
+        \item Tener un índice general al inicio de la bitácora
+        \item Tener una caratula al inicio de la bitácora en donde se plasmen los datos generales del estudiante
+        \item Escrita completamente a pluma
+        \item En caso de errores, se tachará con línea simple, en otras palabras, no están permitidos rayones, no corrector
+      \end{itemize}
+      La calificación de la bitácora, en escala de 0 a 10, será el promedio simple de las calificaciones de las revisiones de dicho documento. La revisión de la bitácora será aleatorio para asegurar que se escriba mientra se realizan las prácticas y no posteriormente a la conclusión de cada una de las mismas.
+     \item [Video-bitácora (5\%).] Deberá contener segmentos de grabación del desarrollo de las prácticas de laboratorio y proyecto. Podrá contener, aunque no se limita a: explicaciones, hipótesis, prueba de circuitos, discusiones y reflexiones. La calificación de la vídeo-bitácora será el promedio simple de las calificaciones parciales, todas en escala de 0 a 10.
+  	\end{description}
+
+%La bitácora y las video-bitácoras deberán ser realizadas para cada práctica y para el proyecto. La calificación en cada caso será el promedio simple de las calificaciones parciales de las prácticas y proyecto. El esquema de calificaciones será sobre diez.
+	\subsection{Nota final}
+
+Sea $C_p$ la calificación obtenida con la correspondiente ponderación de los elementos de teoría y de laboratorio. La nota final $N_f$ se obtendrá de acuerdo a:
+	\begin{equation}
+	N_f = 
+		\begin{cases}
+		  \text{NA}, & C_p < 6 \\
+		  \text{S},  & 6\leq C_p < 7.6\\
+		  \text{B},  & 7.8\leq C_p < 8.8\\
+		  \text{MB},  & C_p \geq 8.8\\
+		\end{cases}
+	\end{equation}
+%	\begin{equation}
+%	C_f = 
+%		\begin{cases}
+%		5, & \text{si} \ C_p < 6 \\
+%		\lceil C_p \rceil, & \text{si} \ mod(C_p,1) \geq 0.55 \\
+%		\lfloor C_p \rfloor, & \text{en otro caso.}  
+%		\end{cases}
+%	\end{equation}
+%Donde la función residuo se denota como $mod()$, mientras que las funciones entero siguiente y entero anterior se denotan como $\lceil \cdot \rceil$ y $\lfloor \cdot \rfloor$, respectivamente.
+
+\vspace* {3pt}
+\hrule
+\vspace* {2pt}
+
+\section{Consideraciones de evaluación}
+\begin{enumerate}
+ \item Bajo ninguna circunstancia se aplicarán exámenes de reposición, tampoco se permitirán entregas extemporáneas, ni se dejarán trabajos adicionales a los estipulados en la presente planeación. Por tal motivo, se exhorta a los alumnos que pongan empeño desde el principio del curso, así mismo, también se les pide que expongan oportunamente sus inquietudes ya sea de manera oral u escrita.
+ \item Los códigos, bitácoras o en general cualquier entregable que tengan un parecido, ya sea entre compañeros a alguna fuente externa, serán sometidos a un sistema de detección de plagio; en caso que este sea detectado se procederá de acuerdo a la sección de Fraude Académico.
+\end{enumerate}
+
+\vspace*{5pt}
+\hrule
+\section{Fraude Académico}
+
+No se tolerará fraude académico alguno y se seguirá estrictamente la Política Sobre Fraude Académico de la Universidad. Cualquier alumno que sea sorprendido cometiendo fraude será reprobado inmediatamente en el curso y su caso remitido al Consejo Técnico.
+
+Con la política como guía, es indispensable puntualizar algunos elementos específicos para esta clase:
+
+\begin{enumerate}
+	\item  En los trabajos que se entreguen por escrito, queda estrictamente prohibido copiar cualquier material (ya sea transcrito de una fuente impresa o copiado y pegado a partir de una fuente electrónica) como parte de los mismos. Los trabajos deberán seguir las reglas de todo trabajo técnico-científico de nivel profesional, con referencias a las fuentes de la información, parafraseo y sólo una cantidad razonable de citas textuales. Esto aplica para cualquier sección de los reportes.
+
+	\item Queda estrictamente prohibido el uso de sitios de Internet como fuente de información para los trabajos del curso a menos que sea información de fabricantes, como hojas de especificaciones. Puede utilizarse Internet para localizar artículos, libros, manuales, hojas de especificaciones y otras fuentes de información serias que estén disponibles a través de ese medio, así como publicaciones electrónicas serias, pero definitivamente no podrá utilizarse material cuya referencia sea el propio sitio de Internet.
+
+	\item Se hace especial énfasis en que no debe utilizarse ningún material desarrollado por alumnos de trimestres anteriores. Esto incluye no sólo trabajos escritos, sino software y hardware para las prácticas de laboratorio.%semestres anteriores. Esto incluye no sólo trabajos escritos, sino software y hardware para las prácticas de laboratorio.
+
+	\item Queda prohibido utilizar software obtenido de manera ilegal y no se permitirá que los alumnos realicen copias ilegales de los programas disponibles en las computadoras de la universidad.
+\end{enumerate}
+
+\section{Reglamento interno}
+\begin{itemize}
+  \item Tolerancia para ingresar al salón de clase o laboratorio es 15 minutos luego de la hora oficial de inicio de clase.
+  \item El uso de dispositivos electrónicos como son: celulares, tablets o laptops no están prohibidos siempre y cuando se utilicen para propósitos académicos. El uso de cualquier tecnología de la información para propósitos no académicos o que interfieran con el curso de la clase se hará acreedor a una llamada de atención. Cuando se acumulen tres llamadas de atención se tomarán medidas coercitivas como son la suspensión definitiva del uso de cualquier dispositivo electrónico en clase.
+  \item El eje conductor del curso será el respeto y cordialidad entre todos los integrantes del proceso de enseñanza aprendizaje, pero siempre conservando el espíritu crítico y la apertura a la discusión de ideas bien fundamentadas.
+  \item El bullying y cualquier acto de discriminación están absolutamente prohibidos en el salón de clase. En cualquier caso se llamará la atención una vez y en caso de reincidencia se notificará al Consejo Técnico.
+  \item La entrega extemporánea de cualquier entregable está sujeta a la siguiente ecuación
+   \begin{equation}
+     \large x_w = x{e}^{-0.01t},
+   \end{equation}
+   donde $x$ es la calificación sin ponderación del entregable, $t$ el tiempo en horas de retardo en la entrega y $x_w$ la calificación correspondiente luego de la ponderación por retardo. Está ecuación está calculada para asignar 6.9 a una tarea que hipotéticamente se calificó con 10, pero fue entregada 36 horas después de la fecha y hora estipuladas.
+\end{itemize}
+
+\section*{Anexo A}
+Prácticas de laboratorio
+\begin{center}
+ \begin{tabular}{rp{0.7\textwidth}}
+  Práctica I& Construcción de un sistema mínimo para simular señales bioeléctricas humanas\\
+Práctica II& Eliminar ruido de parpadeo (EMG) de los canales frontales de un EEG\\
+Práctica III& Eliminar ruido de baja frecuencia de un EKG\\
+Práctica IV& Procesamiento de potenciales de membrana celular\\
+Práctica V& Separación de fuentes de señales EKG + EMG + ruido\\
+Práctica VI& Filtros FIR para extracción de P300\\
+Proyecto &Diseño de filtros analógicos y digitales para aplicaciones en respuesta galvánica de la piel
+ \end{tabular}
+\end{center}
+
+%\newpage
+\section*{Anexo B}
+Fechas importantes
+\begin{center}
+  \begin{tabular}{rl}
+  	\multicolumn{2}{c}{\bf Exámenes}\\\hline
+    Examen I  & 2019.02.21\\
+    Examen II & 2019.03.14\\
+    Examen III& 2019.04.02\\
+    Examen Global& 2019.04.09\\
+%    \multicolumn{2}{c}{\bf Entregas}\\\hline
+%    Práctica I  & 2019.02.05\\
+%    Práctica II & 2019.02.25\\
+%    Práctica III& 2019.03.21\\
+%    Práctica IV & 2019.04.04\\
+%    Práctica V  & 2019.05.14\\
+%    Proyecto    & \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\vfill
+\firma
+
+\end{document}

@@ -1,0 +1,71 @@
+%setting basico
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[landscape,top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%info
+\input{../common/info}
+
+%Ambientes matemáticos
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\decimalpoint
+
+%Márgenes y tamaño de la página
+\parindent 0em
+\usepackage{setspace}
+\onehalfspacing
+\widowpenalty=500
+\clubpenalty=300
+%\hoffset = -0.54cm
+\voffset       = -2em
+\topmargin     = 0cm
+\headheight    = 4em
+\topmargin     = 0em
+\oddsidemargin =  0.5cm \evensidemargin = -0.5cm
+\textwidth     = 16cm
+\textheight    = 21cm
+
+%Citas e hipervínculos
+\usepackage[pdftex]{graphicx}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+
+%Párrafos
+\usepackage{parskip}
+\setlength{\parskip}{1em plus 0.2em minus 0.1em}
+\setlength{\skip\footins}{2em} % distancia entre footnotes y texto
+\usepackage{xspace}
+
+%Imágenes y ambientes flotatnes
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[small,bf]{caption}
+\usepackage{subcaption}
+\graphicspath{{../../images/}{../../images/common/}{../../images/lab/}}
+
+%Colores
+\usepackage{color}
+\usepackage[usenames,dvipsnames,table]{xcolor}
+
+%estilo de página
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,LO]{\includegraphics[width=0.3\textwidth ]{logo}}
+\fancyhead[RE,RO]{\includegraphics[width=0.1\textwidth]{lab}}
+
+\fancyfoot[RE,RO]{  }
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%Tipos de bullets en ambiente itemize
+\renewcommand{\labelitemi}{$\square$}
+\usepackage{enumitem}
+\setlist{nosep} 
+
+%Otros
+\usepackage{datenumber} %nombre del día dada una fecha
