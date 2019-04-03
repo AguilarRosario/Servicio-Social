@@ -13,25 +13,25 @@
  \textsc{\asignatura}\vspace{.2em}
 \end{center}
 
-\textsc{Manual del profesor}
+\textsc{Manual del profesor}\vspace{.2em}
 
 \textsc{Práctica 3. aplicación de filtros digitales tipo butterworth rechaza banda a señales biomédicas reales}
 
-\textsc{Objetivo:} Aplicar los conocimientos sobre el diseño de filtros Butterwoth rechaza banda para procesamiento de señales biomédicas reales simulando su adquisición en tiempo real.
+\textsc{Objetivo:} Aplicar los conocimientos sobre el diseño de filtros Butterwoth digitales rechaza banda para procesamiento de señales biomédicas reales.
 
 \textsc{Actividades}
 \begin{enumerate}
  \item Descargar el archivo 'PCG$\_$60.npz' disponible en 
- \item Se recomienda reproducir el audio, para identificar que la señal se encuentra contaminada,se puede consultar en el script 'Butterworth$\_$practica3'. 
- \\En la figura~\ref{contexto:PCG} se observa la señal de PCG, se observa un ruido alrededor de los 17 segundos que indica que posiblemente fue producirda por un artefacto de movimiento.
+ \item Se recomienda reproducir el audio, para identificar que la señal se encuentra contaminada, se puede consultar en el script 'Butterworth$\_$practica3'. 
+ \\ Si se desea hacer alguna modificación en la señal de PCG se puede consultar el script 'señales utilizadas'.
+ \\En la figura~\ref{contexto:PCG} se muestra la señal de PCG, es porsible observar un ruido alrededor de los 17 segundos que indica que posiblemente fue producida por un artefacto de movimiento.
  \begin{figure}[H]
  	\centering
  	\includegraphics[scale=0.5]{PCG.PNG}
  	\caption{Señal de PCG}
 	\label{contexto:PCG}
  \end{figure}
- \item Obtener la FFT de la señal de manera digital, esto es posible realizarlo con la función fou, en la figura~\ref{contexto:FFT_c}
- \\En la figura es posible observar que la interferencia se encuentra en los 60 Hz 
+ \item Obtener la FFT de la señal de manera digital, esto es posible realizarlo con la función fou, en la figura~\ref{contexto:FFT_c} es posible observar que la interferencia se encuentra en los 60 Hz 
  \begin{figure}[H]
  	\centering
  	\includegraphics[scale=0.5]{FFT_c.PNG}
@@ -68,7 +68,7 @@
  	\label{contexto:RF_RB4}
  \end{figure}
  \begin{enumerate}
- 	\item Se puede observar que las frecuencias de corte se encuentran aprox en 59 y 61 Hz, así también, la fase se observa que tiene un comportamiento lineal
+ 	\item Se puede observar que las frecuencias de corte se encuentran aprox en 59 y 61 Hz, así también, es posible notar que la fase tiene un comportamiento lineal
  \end{enumerate}
  \item Se filtrará la señal en fase cero como en el caso del filtro anterior. En la figura~\ref{contexto:FFT_RB4} se observa la FFT de la señal filtrada con filtro de orden 4.
  \begin{figure}[H]

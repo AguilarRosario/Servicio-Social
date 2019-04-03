@@ -10,30 +10,31 @@
  \textsc{\asignatura}\vspace{.2em}
 \end{center}
 
-\textsc{Práctica V. Aplicación de filtros Chebyshev tipo 1 y 2 digitales para detección de actividad mental en EEG}
+\textsc{Práctica 5. Aplicación de filtros Chebyshev tipo 1 y 2 digitales para la detección de frecuencia cardiaca.}
 
-\textsc{Objetivo:}texto
+\textsc{Objetivo:} Aplicar los conocimientos sobre el diseño de filtros digitales Chebyshev tipo I y II para la detección de la frecuencia cardiaca mediante el procesamiento de señal de sonidos de Korotkoff.
+
+\textsc{Introducción:} La medición de presión sanguínea no invasivo por el método auscultatorio. Esta técnica emplea un esfigmomanómetro el cual es colocado en el antebrazo del paciente, que consiste en inflar el brazalete hasta alcanzar una presión aproximadamente de 150 mmHg logrando así ocluir el flujo de sangre en la vena del antebrazo, inmediatamente después se empieza a desinflar el brazalete a una velocidad de 2-3 mmHg, el flujo de sangre comienza y con ello la primera fase de los sonidos de Korotkoff (contenido espectral entre 20-300 Hz), es registrada la presión sistólica, continua el flujo sanguíneo pasando así las cinco fases de los sonidos de Korotkoff, a continuación, se presenta la etapa del silencio y es registrada la presión diastólica.
 
 \textsc{Actividades:}
 \begin{enumerate}
-  \item Descargar el archivo *link*
-  \item Diseñar filtros Chebyshev tipo 1 para segmentar el EEG en sus cuatro bandas principales (alfa, beta, theta y delta)
-  \item Implementar dichos filtros con fase cero
-  \item Comprobar la segmentación de las cuatro bandas por medio de su FFT
-  \item Caracterizar la respuesta en frecuencia de los filtros
-  \item Diseñar filtros Chebyshev tipo 2 para segmentar el EEG en sus cuatro bandas principales (alfa, beta, theta y delta)
-  \item Implementar dichos filtros con fase cero
-  \item Comprobar la segmentación de las cuatro bandas por medio de su FFT
-  \item Caracterizar la respuesta en frecuencia de los filtros
-  \item Identificación de la actividad mental de interés en las diferentes épocas
+  \item Descargar el archivo http://drives.news/google247
+  \item Obtener la FFT de la señal de manera digital e identificar la interferencia
+  \item Diseñar un filtro pasa banda Chebyshev tipo 1 orden 2 para eliminar la interferencia 
+  \item Implementar el filtro con fase cero 
+  \item Caracterizar la respuesta en frecuencia del filtro 
+  \item Diseñar un filtro pasa banda CHebyshev tipo 2 orden 2 para eliminar la interferencia 
+  \item Implementar el filtro en fase cero 
+  \item Caracterizar la respuesta en frecuencia del filtro 
+  \item Para ambos filtros obtener la frecuencia cardiaca 
 \end{enumerate}
 
 \textsc{Entregables}
 \begin{itemize}
-  \item Bitácora por equipo.
-  \item Caracterización de los filtros.
-  \item Código.
-  \item Identificación de actividad mental.
+  \item Bitácora por equipo
+  \item Caracterización de los filtros
+  \item Código
+  \item Identificación de la frecuencia cardiaca
 \end{itemize}
 
 %\textsc{Nota}

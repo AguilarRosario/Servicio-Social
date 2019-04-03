@@ -1,0 +1,37 @@
+\documentclass[10pt,letterpaper,spanish,twoside]{report}
+
+\usepackage{practica}
+\usepackage{graphicx}
+\usepackage{float}
+%\DeclareGraphicsExtensions{.bmp,.png,.pdf,.jpg}
+\input{../common/plantillas}
+
+\begin{document}
+%\docdate
+
+\textsc{}
+
+\begin{center}
+ \textsc{\asignatura}
+ \textsc{\\Aspectos Generales}
+\end{center}
+
+\textsc{Sobre las señales utilizadas.} Se utilizaron señales de ECG, Onda de presión arterial, FCG y señal de respiración obtenidas de las bases de datos de PhysioNET. Estas señales se acondicionaron en Python para que tuvieran una frecuencia de muestreo de 1 kHz. Adicionalmente, se almacenaron todas estas señales en formato nativo de Python y formato wav. Todo el proceso de lectura, acondicionamiento y almacenamiento de las señales se puede consultar en el script 'SeñalesUtilizadas'. Hay que destacar que en la práctica de filtros pasa banda Chebyshev se utilizó una señal de sonidos de Korotkoff registrada en los laboratorios de docencia de la universidad, los detalles del sensor utilizado se especifican en dicha práctica.
+
+\textsc{Sobre el diseño de los filtros Butterworth analógicos.} Se diseñó una función basada en la información proporcionada por el documento 'MT-2222'. Esta función se puede analizar en el script 'Diseño de Filtros'. La función nos permite obtener los valores de los componetes de un filtro Butterwoth analógico que utiliza la topología Sallen-Key. Dicha función está hecha para el cálculo de componentes pero sólo para filtros orden 2, si se desea diseñar un filtro de orden superior se tendrá que diseñar por etapas variando la alfa en la función. Adicionalmente la función nos permite obtener los coeficientes de la función de transferecia del filtro diseñado.
+
+\textsc{Sobre el diseño de filtros Chebyshev analógicos.} AQUÍ VA A IR LA DESCRIPCIÓN DE LA FUNCIÓN QUE SE VA A DESARROLLAR PARA EL DISEÑO DE LOS FILTROS
+
+\textsc{Sobre el diseño de filtros Butterworth Y Chebyshev digitales.} El diseño y utilización de estos filtros se realizó utilizando el lenguaje de Programación Python 3. Para cada práctica se elaboró un script debidamente comentado para su futuro análisis.
+
+
+%\textsc{Nota}
+%\vspace{2em}
+\vfill
+\begin{flushright}
+\textsc{Elaboraron:\\
+Ma. del Rosario Aguilar Cruz\\
+Enrique Mena Camilo}
+\end{flushright}
+
+\end{document}
